@@ -1,4 +1,4 @@
-# 🎥 Conoce el Entorno de Desarrollo de Unity
+# 🔎​ Conoce el Entorno de Desarrollo de Unity
 
 [![GitHub Profile](entorno-desarrollo-unity.png)](https://github.com/devTever)
 
