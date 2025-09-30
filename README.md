@@ -2,32 +2,22 @@
 
 [![GitHub Profile](entorno-desarrollo-unity.png)](https://github.com/devTever)
 
-## 1) Actualización de Unity y versión con la que vamos a trabajar
-- Comienza mostrando el **Unity Hub**.  
-- Explica brevemente la importancia de tener Unity actualizado.  
-- Indica la **versión que usarás en el curso/proyecto** (ejemplo: *Unity 2022 LTS*), destacando que es estable y recomendada para aprendizaje.  
-- 👉 Consejo: comenta que se puede instalar más de una versión para distintos proyectos.
-
----
-
-## 2) Crear un nuevo proyecto
-- Abre Unity Hub → **New Project**.  
-- Elige la plantilla **2D** o **3D** (según lo que uses para este ejercicio).  
-- Ponle nombre (ejemplo: *ProyectoVentanasUnity*).  
+## 1) Crear un nuevo proyecto
+- Abre Unity Hub → **New Project**
+- Elige la plantilla **2D**
+- Ponle nombre (ejemplo: *Prueba*).  
 - Selecciona la carpeta donde guardar y haz clic en **Create Project**.  
 
 ---
 
-## 3) Espacio de trabajo de Unity con sus lugares
-Muestra y explica las **ventanas principales**:  
+## 2) Espacio de trabajo de Unity con sus lugares
+Observa las **ventanas principales**:  
 - **Scene (Escena):** donde colocamos y organizamos objetos.  
 - **Game (Juego):** vista previa de cómo se verá al ejecutar.  
 - **Hierarchy (Jerarquía):** lista de todos los objetos de la escena.  
 - **Inspector:** donde editamos las propiedades del objeto seleccionado.  
 - **Project:** donde están los archivos del proyecto (scripts, imágenes, sonidos, etc.).  
 - **Console:** mensajes, errores y avisos.  
-
-👉 Consejo: recalca que las ventanas se pueden mover y reorganizar.
 
 ---
 
@@ -48,14 +38,18 @@ Muestra y explica las **ventanas principales**:
    using UnityEngine;
    using TMPro;   // Necesario para usar TextMeshPro
    using UnityEngine.UI;
-
+   
    public class BotonTexto : MonoBehaviour
    {
        public TMP_Text mensaje;
-
+   
        public void CambiarTexto()
        {
+           // Cambia el texto en pantalla
            mensaje.text = "Has tocado el botón";
+   
+           // Muestra mensaje en la consola de Unity
+           Debug.Log("El botón fue pulsado. Texto cambiado a: " + mensaje.text);
        }
    }
    ```
@@ -68,8 +62,8 @@ Muestra y explica las **ventanas principales**:
 ---
 
 ## 5) [Recomendación] Tener Visual Studio Code como editor de código
-- Explica que es ligero y rápido.  
-- Instalar **Visual Studio Code** desde su web oficial.  
+- Es ligero y rápido.  
+- Instalar **Visual Studio Code** desde su [web oficial](https://code.visualstudio.com/)
 - Plugins recomendados:  
   - *C#* (de Microsoft)  
   - *Unity Tools*  
@@ -82,4 +76,13 @@ Muestra y explica las **ventanas principales**:
 - Vuelve a Unity.  
 - Haz clic en **Play ▶️**.  
 - Muestra el texto inicial: *“Hola, toca el botón”*.  
-- Haz clic en el botón y que cambie a: *“Has tocado el botón”*.  
+- Haz clic en el botón y que cambie a: *“Has tocado el botón”*.
+
+---
+
+## 7) Video con el ejercicio
+
+
+---
+
+[![Made with ❤️ by Tever](https://img.shields.io/badge/Made%20with%20❤️-by%20Tever-181717?logo=github)](https://github.com/devTever)
