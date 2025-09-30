@@ -21,7 +21,7 @@ Observa las **ventanas principales**:
 
 ---
 
-## 4) Ejemplo sencillo de un texto con un botón
+## 3) Ejemplo sencillo de un texto con un botón
 1. **Crear UI básica**:  
    - Menú `GameObject → UI → Text (TMP)` → aparecerá un texto.  
    - Cámbialo en el Inspector a: **"Hola, toca el botón"**.  
@@ -61,7 +61,7 @@ Observa las **ventanas principales**:
 
 ---
 
-## 5) [Recomendación] Tener Visual Studio Code como editor de código
+## 4) [Recomendación] Tener Visual Studio Code como editor de código
 - Es ligero y rápido.  
 - Instalar **Visual Studio Code** desde su [web oficial](https://code.visualstudio.com/)
 - Plugins recomendados:  
@@ -72,11 +72,40 @@ Observa las **ventanas principales**:
 
 ---
 
-## 6) Probar el ejercicio
+## 5) Probar el ejercicio
 - Vuelve a Unity.  
 - Haz clic en **Play ▶️**.  
 - Muestra el texto inicial: *“Hola, toca el botón”*.  
 - Haz clic en el botón y que cambie a: *“Has tocado el botón”*.
+
+---
+
+## 6) Pequeña mejora
+- En la carpeta *Scripts* → `BotonTexto.cs`
+- Añadimos contador e incrementamos cada vez que hacemos clic
+     
+   ```csharp
+   using UnityEngine;
+   using TMPro;   // Necesario para usar TextMeshPro
+   using UnityEngine.UI;
+   
+   public class BotonTexto : MonoBehaviour
+   {
+       public TMP_Text mensaje;
+       int numVeces = 0;
+   
+       public void CambiarTexto()
+       {
+           numVeces++;
+           // Cambia el texto en pantalla
+           mensaje.text = "Has tocado el botón " + numVeces + " veces";
+   
+           // Muestra mensaje en la consola de Unity
+           Debug.Log("El botón fue pulsado. Texto cambiado a: " + mensaje.text);
+       }
+   }
+   ```
+
 
 ---
 
