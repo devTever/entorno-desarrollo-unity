@@ -111,6 +111,9 @@ Observa las **ventanas principales**:
 
 ## 7) Video con el ejercicio
 
+Haz click en la imagen 😉
+
+[![Video en YouTube](https://img.youtube.com/vi/KqW8t_Sr20k/0.jpg)](https://www.youtube.com/watch?v=KqW8t_Sr20k)
 
 ---
 
